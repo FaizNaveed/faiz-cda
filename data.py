@@ -2,12 +2,12 @@ import pandas as pd
 import streamlit as st
 
 
-path = r'C:\Users\arsen\Downloads\Data analysis\class 2/'
-filename= 'Billionaire.csv'
-filepath= path+filename
+#path = r'C:\Users\arsen\Downloads\Data analysis\class 2/'
+#filename= 'Billionaire.csv'
+#filepath= path+filename
 #data=pd.read_csv(filepath)
 #for github we will add the file name directly
-data=pd.read_csv(Billionaire.csv)
+data=pd.read_csv('Billionaire.csv')
 data['NetWorth'] = data['NetWorth'].apply(lambda x: float(x.replace('$','').replace('B' , '')))
 st.header('Billionaire')
 
